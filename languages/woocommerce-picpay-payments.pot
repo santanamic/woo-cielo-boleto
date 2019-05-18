@@ -1,0 +1,237 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce PicPay Pagamentos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-08 20:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.0.4"
+
+#: includes/class-wc-picpay-payments-gateway.php:752
+#, php-format
+msgid "Alteração de status da order: %s"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:875
+#, php-format
+msgid ""
+"API não processada. A solicitação foi feita para um status de pedido não "
+"necessário ou com dados inválidos: %s"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:128
+msgid "Ativar/Desativar"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-helper.php:59
+msgid "Configurações"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:142
+msgid "Descrição."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-helper.php:75
+msgid "Documentação"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:350
+#, php-format
+msgid "Erro de validação do URL do gateway: %s"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:341
+msgid "Erro em obter a URL de pagamento do PicPay. Tente novamente!"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:157
+#: includes/class-wc-picpay-payments-gateway.php:159
+msgid "Habilitar Log"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/santanamic"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/santanamic/woocommerce-picpay-payments"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:144
+msgid "Isso controla a descrição que o usuário vê durante o checkout."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:137
+msgid "Isso controla o título que o usuário vê durante o checkout."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:185
+#, php-format
+msgid "Log do processo de pagamento para o ID do pedido: %s"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:129
+msgid "Marque para ativar essa forma de pagamento"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:308
+msgid ""
+"O comprador iniciou a transação, mas até agora o PicPay não recebeu nenhuma "
+"informação de pagamento."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-notices_builder.php:180
+msgid ""
+"Obrigado por baixar o plugin <strong>PicPay Pagamentos</strong> para ativá-"
+"lo acesse o menu de <a href=\"admin.php?page=wc-"
+"settings&tab=checkout&section=woocommerce-picpay-payments\">opções</a>."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:563
+#, php-format
+msgid "Obtendo o status da ordem: %s"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:146
+msgid "Pague com seu smartphone através do PicPay."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-notices_builder.php:100
+msgid ""
+"Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa da "
+"versão 3.0.0 ou superior do <strong>WooCommerce</strong>."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-notices_builder.php:80
+msgid ""
+"Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa da "
+"versão 5.6.0 ou superior do <strong>PHP</strong>. Entre em contato com seu "
+"host."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-notices_builder.php:120
+msgid ""
+"Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa dos "
+"plugin(s) <a href=\"plugin-install.php?tab=plugin-"
+"information&plugin=woocommerce\" data-fancybox data-type=\"iframe\">"
+"WooCommerce</a> e <a href=\"plugin-install.php?tab=plugin-"
+"information&plugin=woocommerce-extra-checkout-fields-for-brazil\" data-"
+"fancybox data-type=\"iframe\"> WooCommerce Extra Checkout Fields for "
+"Brazil</a> ativados."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-notices_builder.php:160
+msgid ""
+"Para receber pagamentos com o <strong>PicPay</strong> certifiquese de "
+"inserir as credenciais de acesso no menu de <a href=\"admin.php?page=wc-"
+"settings&tab=checkout&section=woocommerce-picpay-payments\">opções.</a>"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-notices_builder.php:140
+msgid ""
+"Para receber pagamentos com o <strong>PicPay</strong> você precisa habilitar "
+"a Moeda <a href=\"admin.php?page=wc-settings&tab=general#pricing_options-"
+"description\">Real brasileiro (R$) no WooCommerce.</a>"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:62
+msgid ""
+"Para utilizar este meio de pagamento você precisa das credenciais de acesso "
+"fornceias pelo PicPay. <br> <a href=\"https://lojista.picpay."
+"com/dashboard/ecommerce-token\">Crie ou entre na sua conta PicPay para "
+"conseguirás!</a>"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:376
+msgid ""
+"Parece que o PicPay está fora do ar. Escolha outra forma de pagamento ou "
+"tente novamente!"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:538
+#, php-format
+msgid ""
+"PicPay Gateway recebeu uma notificação de URL, mas o corpo da mensagem é "
+"invalido : %s"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:456
+#, php-format
+msgid "PicPay Gateway recebeu uma notificação de URL: %s"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:61
+msgid "PicPay Pagamentos"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:697
+msgid "PicPay: Pagamento aprovado."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:732
+msgid "PicPay: Pagamento chargeback."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:707
+msgid "PicPay: Pagamento concluído e creditado em sua conta."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:674
+msgid "PicPay: Pagamento expirado."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:720
+#: includes/class-wc-picpay-payments-gateway.php:722
+msgid "PicPay: Pagamento reembolsado."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:684
+msgid "PicPay: Pagamento sob revisão."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:774
+#, php-format
+msgid "Processo para cancelamento da order: %s"
+msgstr ""
+
+#. Description of the plugin
+msgid "Receba Pagamentos com PicPay no WooCommerce"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:161
+#, php-format
+msgid ""
+"Registra os eventos do Gateway, como notificações de pagamento, através do "
+"arquivo <code>%s</code>. Observação: isto pode gravar informações pessoais. "
+"Nós recomendamos usar isso para apenas para fins de depuração e que delete "
+"estes registros após finalizar."
+msgstr ""
+
+#: includes/class-wc-picpay-payments-helper.php:67
+msgid "Suporte"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:135
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-picpay-payments-gateway.php:218
+#, php-format
+msgid "URL de pagamento recuperado: %s"
+msgstr ""
+
+#. Author of the plugin
+msgid "WILLIAN SANTANA"
+msgstr ""
+
+#. Name of the plugin
+msgid "Woocommerce PicPay Pagamentos"
+msgstr ""

@@ -1,0 +1,31 @@
+{
+  "name": "woo-cielo-boleto",
+  "version": "1.0.0",
+  "description": "Documentação para emitir boletos usando a API Cielo eCommerce v3 no WooCommerce",
+  "main": "./docs",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies" : {
+    "docsify-cli": "^4.3.0"
+  },
+  "scripts": {
+    "docs": "npx docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santanamic/woo-cielo-boleto.git"
+  },
+  "author": [
+    {
+		"name": "WILLIAN SANTANA",
+		"email": "williansantanamic@gmail.com",
+		"url": "https://github.com/santanamic"
+    } 
+  ],
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/santanamic/woo-cielo-boleto/issues"
+  },
+  "homepage": "https://github.com/santanamic/woo-cielo-boleto#readme"
+}

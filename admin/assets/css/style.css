@@ -1,0 +1,19 @@
+
+/**
+ *
+ * Fancybox config, limit responsive modal
+ *
+ */ 
+
+.fancybox-slide--iframe .fancybox-content {
+    max-width: 800px;
+    max-height: 600px;
+    min-width: 205px;
+    min-height: 470px;
+}
+
+.fancybox-slide.fancybox-slide--iframe.fancybox-slide--current.fancybox-slide--complete {
+    width: 100%;
+    padding: 20px;
+    padding-top: 70px;
+}

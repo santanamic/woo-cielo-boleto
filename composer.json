@@ -1,0 +1,33 @@
+{
+    "name": "santanamic/woo-cielo-boleto",
+    "version": "1.0.0",
+    "type": "wordpress-plugin",
+    "description": "Emita boletos usando a API Cielo eCommerce v3",
+    "keywords": [
+        "santanamic",
+        "Cielo",
+        "Boleto",
+        "WooCommerce",
+        "Payments"
+    ],
+    "homepage": "https://github.com/santanamic/woo-cielo-boleto",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "WILLIAN SANTANA",
+            "email": "williansantanamic@gmail.com",
+            "homepage": "https://github.com/santanamic",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.6"
+    },
+    "autoload": {
+        "classmap": [ "includes", "vendor/santanamic" ]
+    },
+    "scripts": {
+        "docs": "docsify serve docs"
+    }
+}
+
