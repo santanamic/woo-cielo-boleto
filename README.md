@@ -2,7 +2,7 @@
   <a href="#">
     <img width="300" alt="WooCommerce Cielo Boleto" src="https://santanamic.github.io/woo-cielo-boleto/_media/logo.svg">
   </a>
-</p>
+</p> 
 
 <p align="center">
   Emita boletos usando a API Cielo eCommerce v3.
