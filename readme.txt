@@ -1,27 +1,27 @@
 === WooCommerce Picpay Pagamentos ===
 Contributors: williansantana
-Tags: credit card, picpay, pagamento
-Requires at least: 1.2.0
+Tags: Boleto, Cielo, API v3, pagamentos, Checkout, Gateway
+Requires at least: 1.0.0
 Tested up to: 5.1.1
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Receba Pagamentos com PicPay no WooCommerce
+Emita boletos usando a API Cielo eCommerce v3 no WooCommerce
 
 == Description ==
 
 = Em Português Brasil =
-WooCommerce PicPay Pagamentos permite que sua loja aceite pagamentos via PicPay. Os usuários são redirecionados para o site do PicPay onde podem concluir o pagamento usando seus smartphones.
+O plugin WooCommerce Cielo Boleto permite que logistas aceitem pagamentos via boleto usando a API Cielo. Ao finlizar uma compra os usuários são redirecionados para a URL do boleto.
 
 = in English =
-WooCommerce PicPay Payments allows your store to offer payments via PicPay. Users are redirected to the PicPay site where they must complete the payment using their smartphones.
+The WooCommerce Cielo Boleto plugin allows merchants to Accept Boleto payments using the Cielo API. When customers complete a purchase, they are redirected to the Boleto URL.
 
 == Installation ==
 
 1. Acesse o painel de administrador do WordPress.
 2. Na barra lateral direita, vá para: Plugins > Adicionar novo.
-3. No campo de buscas entre com "WooCommerce PicPay Pagamentos". 
+3. No campo de buscas entre com "WooCommerce Cielo Boleto". 
 4. Selecione nosso plugin na lista e clique em "Instalar agora".
 5. Por fim, clique no botão "Ativar" após a instalação.
 
@@ -31,8 +31,9 @@ O método de instalação manual envolve o download do nosso plugin e o seu uplo
 
 == Requirements ==
 
-- Uma conta PicPay e-commerce
-- Credenciais de acesso para API. [Clique aqui para obter.](https://lojista.picpay.com/dashboard/ecommerce-token "Credenciais PicPay")
+- Uma conta Cielo eCommerce
+- Credenciais de acesso para API. [Clique aqui para obter.](https://santanamic.github.io/woo-cielo-boleto/#/?id=obtendo-credenciais "Credenciais Cielo eCommerce")
+- Um certificao SSL EV
 - Plugin "WooCommerce" ativado e instalado.
 - Plugin "WooCommerce Extra Checkout Fields for Brazil" ativado e instalado.
 - Versão mínima do PHP  5.6
@@ -41,8 +42,8 @@ O método de instalação manual envolve o download do nosso plugin e o seu uplo
 
 > O nosso FAQ é sempre atualizado com as dúvidas mais recebidas. Então fique atendo as nossas atualizações frequentes.
 
-= Qual país o PicPay atende? =
-Atualmente o PicPay recebe pagamento somente e exclusivamente do Brasil.
+= Qual país a Cielo atende? =
+Atualmente a Cielo recebe pagamento somente e exclusivamente do Brasil.
 
 = Onde posso encontrar documentação? =
 Para obter ajuda na configuração, consulte nosso [guia do usuário] (https://santanamic.github.io/woo-cielo-boleto/)
@@ -57,10 +58,7 @@ Não necessariamente! Como qualquer desenvolvedor ou usuário do wordpress, cria
 
 1. Opção para habilitar o plugin.
 2. O painel de configurações usado para configurar o gateway.
-3. instruções de como acessar a página para obeter os tokens de acesso no painel do lojista PicPay.
-4. Configuração complementar para gerar os tokens de acesso no painel do lojista PicPay.
-5. instruções de como gerar os tokens de acesso no painel do lojista PicPay.
-6. Campos para copiar os tokens de acesso.
+3. Opções avançadas do painel de configurações.
 
 == License ==
 
@@ -72,5 +70,5 @@ You should have received a copy of the GNU General Public License along with Nom
 
 == Changelog ==
 
-= 1.2.0 =
+= 1.0.0 =
 * Lançamento oficial.
