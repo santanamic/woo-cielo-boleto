@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img width="300" alt="WooCommerce Cielo Boleto" src="https://santanamic.github.io/woo-cielo-boleto/_media/logo2.svg">
+    <img width="300" alt="WooCommerce Cielo Boleto" src="https://santanamic.github.io/woo-cielo-boleto/_media/logo.svg">
   </a>
 </p> 
 
