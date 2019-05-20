@@ -25,9 +25,9 @@ O plugin WooCommerce Cielo Boleto permite que lojistas aceitem pagamentos via bo
 ## Links
 
 - [Cadastro Cielo](https://www.cielo.com.br/e-commerce/)
-- [Obtendo Credenciais](https://santanamic.github.io/woo-cielo-boleto/#obtendo-credenciais)
-- [Processo de compra](https://santanamic.github.io/woo-cielo-boleto/#processo-de-compra)
-- [Perguntas Frequentes](https://santanamic.github.io/woo-cielo-boleto/#perguntas-frequentes)
+- [Obtendo Credenciais](https://santanamic.github.io/woo-cielo-boleto/#/?id=obtendo-credenciais)
+- [Processo de compra](https://santanamic.github.io/woo-cielo-boleto/#/?id=processo-de-compra)
+- [Perguntas Frequentes](https://santanamic.github.io/woo-cielo-boleto/#/?id=perguntas-frequentes)
 
 ## Instalação
 
