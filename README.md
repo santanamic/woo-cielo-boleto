@@ -22,14 +22,14 @@ O plugin WooCommerce Cielo Boleto permite que lojistas aceitem pagamentos via bo
 
 [Acesse a documentação para mais informações](https://santanamic.github.io/woo-cielo-boleto/)
 
-### Links
+## Links
 
 - [Cadastro Cielo](https://www.cielo.com.br/e-commerce/)
 - [Obtendo Credenciais](https://santanamic.github.io/woo-cielo-boleto/#obtendo-credenciais)
 - [Processo de compra](https://santanamic.github.io/woo-cielo-boleto/#processo-de-compra)
 - [Perguntas Frequentes](https://santanamic.github.io/woo-cielo-boleto/#perguntas-frequentes)
 
-### Instalação
+## Instalação
 
 1. Acesse o painel de administrador do WordPress.
 2. Na barra lateral direita, vá para: Plugins > Adicionar novo.
@@ -37,7 +37,7 @@ O plugin WooCommerce Cielo Boleto permite que lojistas aceitem pagamentos via bo
 4. Selecione nosso plugin na lista e clique em "Instalar agora".
 5. Por fim, clique no botão "Ativar" após a instalação.
 
-### Requisitos
+## Requisitos
 
 - Uma conta Cielo e-commerce
 - Credenciais de acesso para API. (As credenciais são obtidas através do suporte Cielo)
@@ -46,7 +46,7 @@ O plugin WooCommerce Cielo Boleto permite que lojistas aceitem pagamentos via bo
 - Plugin "WooCommerce Extra Checkout Fields for Brazil" ativado e instalado.
 - Versão mínima do PHP  5.6
 
-### Ativando forma de pagamento
+## Ativando forma de pagamento
 
 1. Acesse o painel de administrador do WordPress.
 2. Na barra lateral direita, vá para: WooCommerce > Configurações.
@@ -54,7 +54,7 @@ O plugin WooCommerce Cielo Boleto permite que lojistas aceitem pagamentos via bo
 4. Marque o boão corresponente ao "Cielo Boleto" para selecioná-lo como ativo no checkout.
 5. Click em "Gerenciar" para abrir a tela principal de configurações.
 
-### Configuração
+## Configuração
 
 Na tela de configurções do plugin insira as demais informações:
 
