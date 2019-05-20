@@ -6,8 +6,10 @@
   - [Configuração](#configura%C3%A7%C3%A3o)
 
 - Obtendo credenciais
-  - [Acesso a conta](#acesso-a-conta)
+
+  - [Solicitando credenciais](#solicitando-credenciais)
   - [Procedimentos](#procedimentos)
+  - [Sandbox](#sandbox)
 
 - Processo de compra 
 
@@ -16,4 +18,9 @@
 
 - Perguntas Frequentes
   
-  - [Site oficial](#site-oficial)
+  - [Dúvidas de Negócio](#d%C3%BAvidas-de-neg%C3%B3cio)
+  - [Dúvidas Técnicas](#d%C3%BAvidas-t%C3%A9cnicas)
+ 
+- Screenshots
+
+  - [Opções do plugin](#_1-o-painel-de-configura%C3%A7%C3%B5es-usado-para-habilitar-e-configurar-o-gateway)
