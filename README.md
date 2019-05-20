@@ -20,4 +20,53 @@
 
 O plugin WooCommerce Cielo Boleto permite que lojistas aceitem pagamentos via boleto usando a API Cielo. Ao finlizar uma compra os usuários são redirecionados para a URL do boleto.
 
-[Acesse a documentação para mais informações](https://santanamic.github.io/woo-cielo-boleto/#/README)
+[Acesse a documentação para mais informações](https://santanamic.github.io/woo-cielo-boleto/)
+
+### Links
+
+- [Cadastro Cielo](https://www.cielo.com.br/e-commerce/)
+- [Obtendo Credenciais](https://santanamic.github.io/woo-cielo-boleto/#obtendo-credenciais)
+- [Processo de compra](https://santanamic.github.io/woo-cielo-boleto/#processo-de-compra)
+- [Perguntas Frequentes](https://santanamic.github.io/woo-cielo-boleto/#perguntas-frequentes)
+
+### Instalação
+
+1. Acesse o painel de administrador do WordPress.
+2. Na barra lateral direita, vá para: Plugins > Adicionar novo.
+3. No campo de buscas entre com "WooCommerce Cielo Boleto". 
+4. Selecione nosso plugin na lista e clique em "Instalar agora".
+5. Por fim, clique no botão "Ativar" após a instalação.
+
+### Requisitos
+
+- Uma conta Cielo e-commerce
+- Credenciais de acesso para API. (As credenciais são obtidas através do suporte Cielo)
+- Certificado SSL.
+- Plugin "WooCommerce" ativado e instalado.
+- Plugin "WooCommerce Extra Checkout Fields for Brazil" ativado e instalado.
+- Versão mínima do PHP  5.6
+
+### Ativando forma de pagamento
+
+1. Acesse o painel de administrador do WordPress.
+2. Na barra lateral direita, vá para: WooCommerce > Configurações.
+3. Na nova página aberta localize e selecione a aba "Pagamentos".
+4. Marque o boão corresponente ao "Cielo Boleto" para selecioná-lo como ativo no checkout.
+5. Click em "Gerenciar" para abrir a tela principal de configurações.
+
+### Configuração
+
+Na tela de configurções do plugin insira as demais informações:
+
+- **Ativar / Desativar**  - Ativar para usar. Desativar para desligar.
+- **Título**  - Escolha o título exibido aos clientes durante o checkout.
+- **Descrição**  - Adicionar informações mostradas aos clientes no checkout.
+- **MerchantId** - Identificador da loja na API Cielo eCommerce.	.
+- **MerchantKey** - Chave Publica para Autenticação Dupla na API Cielo eCommerce.
+- **Boleto Vencimento** - O número de dias para o vencimento do Boleto.
+- **Boleto Provider** - Banco emissor, cadastrado junto ao suporte Cielo.
+- **Key da URL de notificação** - Um parâmetro key para a validação do header da requisição.
+- **Value da URL de notificação** - Um parâmetro value para a validação do header da requisição.
+- **Sandbox Merchant ID** - Merchant ID do sandbox.
+- **Sandbox Merchant Key** - Merchant Key do sandbox.
+- **Habilitar Log** - Quando estiver marcado ativa o registro de log para o plugin.
