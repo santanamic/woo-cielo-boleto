@@ -73,6 +73,7 @@ class WC_Environment
          */ 
 
         add_filter( 'woocommerce_payment_gateways', array('\CieloBoleto_478R4FRF\WC_Gateway_Register', 'add_gateway') );
+
     }   
 }
 
