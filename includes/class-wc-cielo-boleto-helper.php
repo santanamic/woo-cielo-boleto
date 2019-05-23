@@ -79,7 +79,7 @@ class WC_Helper
          * WordPress links array updated.
          *
          */ 
-        
+		
         return $links;
     }
 
@@ -235,6 +235,42 @@ class WC_Helper
          */
 		 
 		return $query;
+	}
+	
+	/**
+	 *
+	 * Load the plugin text domain for translation.
+	 *
+     * @access public
+	 * @return void
+	 *
+	 */
+	 
+	public static function load_plugin_textdomain() {
+		
+		/**
+         *
+         * Set domain path
+         *
+         */
+		 
+		load_plugin_textdomain( 'woo-cielo-boleto', false,  dirname ( WOOCOMMERCE_CIELO_BOLETO_BASENAME ) . '/languages' );
+	}
+	
+	/**
+	 *
+	 * Send email notification.
+	 *
+	 * @param string $address Email address.
+	 * @param string $subject Email subject.
+	 * @param string $title   Email title.
+	 * @param string $message Email message.
+	 *
+	 */
+	 
+	protected function send_email($address, $subject, $title, $message) {
+		$mailer = WC()->mailer();
+		$mailer->send($address, $subject, $mailer->wrap_message($title, $message));
 	}
 }
 

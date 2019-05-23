@@ -37,7 +37,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 define('WOOCOMMERCE_CIELO_BOLETO_VERSION', '1.0.0');
 define('WOOCOMMERCE_CIELO_BOLETO_DIR_PATH', plugin_dir_path(__FILE__));
 define('WOOCOMMERCE_CIELO_BOLETO_DIR_URL', plugin_dir_url(__FILE__));
-define('WOOCOMMERCE_CIELO_BOLETO_BASENAME', plugin_basename(__FILE__));
+define('WOOCOMMERCE_CIELO_BOLETO_BASENAME', plugin_basename(__FILE__) );
 define('WOOCOMMERCE_CIELO_BOLETO_SLUG', 'woo-cielo-boleto');
 
 require_once( WOOCOMMERCE_CIELO_BOLETO_DIR_PATH . 'vendor/autoload.php' );
@@ -45,5 +45,7 @@ require_once( WOOCOMMERCE_CIELO_BOLETO_DIR_PATH . 'vendor/autoload.php' );
 add_action( 'plugins_loaded', array('\CieloBoleto_478R4FRF\WC_Loader', 'init' ) );
 
 add_action( 'admin_enqueue_scripts', array('\CieloBoleto_478R4FRF\WC_Helper', 'admin_plugin_scripts') );
+
+add_action( 'init', array('\CieloBoleto_478R4FRF\WC_Helper', 'load_plugin_textdomain' ) );
 
 ?>
