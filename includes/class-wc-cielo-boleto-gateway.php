@@ -102,6 +102,9 @@ class WC_Gateway extends \WC_Payment_Gateway
 
           add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
 		  add_action( 'woocommerce_api_' . $this->id, array( $this, 'webhook' ) );
+		  add_action('woocommerce_thankyou_' . $this->id, array( $this, 'order_summary_preview' ) );
+		  add_action( 'woocommerce_email_before_order_table', array( $this, 'email_instructions' ), 10, 3 );
+
       }
 
      /**
@@ -277,14 +280,14 @@ class WC_Gateway extends \WC_Payment_Gateway
 
 			$this->log
 				->add( sprintf(__('URL de pagamento recuperado: %s', 'woo-cielo-boleto'), $url) );
-			
+		   
 		   /**
 			*
 			* Return sucess and redirect for URL payment
 			*
 			*/ 
 	  
-			return [ 'result' => 'success', 'redirect' =>  $url ];
+			return [ 'result' => 'success', 'redirect' =>  $order->get_checkout_order_received_url() ];
 		}
 		
 		/**
@@ -350,7 +353,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 				 */ 
 
 				if( filter_var($url, FILTER_VALIDATE_URL) ) {
-					  
+
 					   /**
 						*
 						* Add payment URL in order
@@ -374,6 +377,14 @@ class WC_Gateway extends \WC_Payment_Gateway
 						*/ 
 						
 						WC()->cart->empty_cart();
+						
+					   /**
+						*
+						* Set new order status
+						*
+						*/
+						
+						$order->update_status( 'on-hold' );
 					  
 					   /**
 						*
@@ -397,7 +408,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 						*
 						*/ 
 					  
-						return [ 'result' => 'success', 'redirect' =>  $url ];	
+						return [ 'result' => 'success', 'redirect' =>  $order->get_checkout_order_received_url() ];	
 				}
 				  
 				/**
@@ -645,7 +656,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 					*
 					*/ 
 				  
-					$order->add_order_note(__( 'Cielo Boleto: Uma atualização de status foi recebida. O status da order na Cielo está como: ' . $payment['status'] ));
+					$order->add_order_note(__( 'Cielo Boleto: Uma atualização de status foi recebida. O status da ordem na Cielo está como: ', 'woo-cielo-boleto' ) . $payment['status'] );
 			  
 				   /**
 					*
@@ -828,24 +839,13 @@ class WC_Gateway extends \WC_Payment_Gateway
 				
 			/**
 			 *
-			 * update order status for in pending and reduce stock
-			 *
-			 */
-			 
-			case '12':
-				$order->update_status( 'on-hold', __('Cielo Boleto: Pagamento sob análise.', 'woo-cielo-boleto' ));
-				wc_reduce_stock_levels( $payment['MerchantOrderId'] );
-				break;
-				
-			/**
-			 *
 			 * Check last status, if it is the same created reduce stock
 			 * Update order status for processing
 			 *
 			 */
 			 
 			case '2':
-				if($order->get_status() == 'created') wc_reduce_stock_levels( $payment['MerchantOrderId'] );
+				if($order->get_status() == 'on-hold') wc_reduce_stock_levels( $payment['MerchantOrderId'] );
 				$order->update_status('processing', __( 'Cielo Boleto: Pagamento aprovado.', 'woo-cielo-boleto' ));
 				break;
 				
@@ -866,9 +866,63 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 */
 
 		$this->log
-			->add( sprintf(__('Alteração de status da order: %s', 'woo-cielo-boleto'), var_export($payment, true)) );
+			->add( sprintf(__('Alteração de status da ordem: %s', 'woo-cielo-boleto'), var_export($payment, true)) );
 	}
 
+    /**
+	 *
+     * Add a boleto view in order summary
+     *
+     * @access public
+     * @return boolean
+     *
+     */
+	 
+	public function order_summary_preview( $order_id ) {
+		
+		/**
+		 *
+		 * Get all order data
+		 *
+		 */ 
+
+		$order = wc_get_order( $order_id );
+		
+		/**
+		 *
+		 * Build boleto iframe in thankyou order page
+		 *
+		 */ 
+
+		$html = '<p>' . __( 'Por favor, pague o boleto para que sua compra seja aprovada.', 'woo-cielo-boleto' ) .'</p>';
+		$html .= '<p><iframe src="' . $order->get_meta('CieloBoleto_URL') . '" style="width:100%; height:1000px;border: solid 1px #eee;"></iframe></p>';
+		
+		/**
+		 *
+		 * Print content
+		 *
+		 */ 
+		 
+		echo '<p>' . $html . '</p>';		
+	}
+	
+	/**
+	 *
+	 * Add content to the WC emails.
+	 *
+	 * @access public
+	 * @param WC_Order $order Order object.
+	 * @param bool     $sent_to_admin  Sent to admin.
+	 * @param bool     $plain_text Email format: plain text or HTML.
+	 *
+	 */
+	 
+	public function email_instructions( $order, $sent_to_admin, $plain_text = false ) {
+		if ( ! $sent_to_admin && 'woo-cielo-boleto' === $order->get_payment_method() && $order->has_status( 'on-hold' ) ) {
+			echo wp_kses_post( wpautop( wptexturize( sprintf ( __( '<strong>OBS: Para reimprimir o boleto <a href="%s">clique aqui</a></strong>', 'woo-cielo-boleto'), $order->get_meta('CieloBoleto_URL') ) ) ) . PHP_EOL );
+		}
+	}
+	
     /**
 	 *
      * Check the requirements for run the gateway in checkout
@@ -887,7 +941,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 */
 		
         return WC_Validation::is_valid_gateway();
-    }
+    }	
 }
 
 ?>
