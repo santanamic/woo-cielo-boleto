@@ -1,0 +1,364 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Cielo Boleto\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 01:43+0000\n"
+"PO-Revision-Date: 2019-05-23 01:45+0000\n"
+"Last-Translator: sandbox <sandbox@wp-sandbox.com.br>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.0.4"
+
+#: includes/class-wc-cielo-boleto-api.php:163
+msgid "COMPRA ONLINE"
+msgstr "ONLINE SHOP"
+
+#: includes/class-wc-cielo-boleto-gateway.php:61
+msgid "Cielo Boleto"
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:62
+msgid ""
+"Para utilizar este meio de pagamento você precisa das credenciais de acesso "
+"fornceias pela Cielo. <br> <a href=\"#\">Entre em contato com o suporte "
+"Cielo para conseguirás!</a>"
+msgstr ""
+"To use this payment method you need the access credentials provided by Cielo."
+" <br> <a href=\"#\"> Contact Sky support to get it! </a>"
+
+#: includes/class-wc-cielo-boleto-gateway.php:129
+msgid "Ativar/Desativar"
+msgstr "Enable/Disable"
+
+#: includes/class-wc-cielo-boleto-gateway.php:130
+msgid "Marque para ativar essa forma de pagamento"
+msgstr "Check to enable this form of payment"
+
+#: includes/class-wc-cielo-boleto-gateway.php:136
+msgid "Checkout Title"
+msgstr "Checkout Title"
+
+#: includes/class-wc-cielo-boleto-gateway.php:138
+msgid "Isso controla o título que o usuário vê durante o checkout."
+msgstr "This controls the title that the user sees during the checkout."
+
+#: includes/class-wc-cielo-boleto-gateway.php:143
+msgid "Checkout Descrição."
+msgstr "Checkout Description."
+
+#: includes/class-wc-cielo-boleto-gateway.php:145
+msgid "Isso controla a descrição que o usuário vê durante o checkout."
+msgstr "This controls the description that the user sees during the checkout."
+
+#: includes/class-wc-cielo-boleto-gateway.php:147
+msgid ""
+"Pagamento com boleto bancário. Imprima o boleto e pague-o em qualquer "
+"agência da rede bancária, casas lotéricas ou banco postal."
+msgstr ""
+"Payment with Boleto. Print the Boleto and pay it at any branch in the "
+"banking network, lottery houses or postal bank."
+
+#: includes/class-wc-cielo-boleto-gateway.php:150
+msgid "Boleto Instruções."
+msgstr "Boleto Instructions."
+
+#: includes/class-wc-cielo-boleto-gateway.php:152
+msgid "Instruções que serão adicionados no texto do Boleto."
+msgstr "Instructions that will be added in the text of the Boleto."
+
+#: includes/class-wc-cielo-boleto-gateway.php:157
+msgid "Boleto Vencimento"
+msgstr "Boleto Maturity"
+
+#: includes/class-wc-cielo-boleto-gateway.php:159
+msgid "Data de expiração do Boleto em dias."
+msgstr "Expiry date of Boleto in days."
+
+#: includes/class-wc-cielo-boleto-gateway.php:164
+msgid "Boleto Provider "
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:166
+msgid ""
+"Atualmente a API Cielo aceita apenas boletos Bradesco e Banco do Brasil "
+"registrados e não registrados, sendo o provider o diferenciador entre eles. "
+msgstr ""
+"Currently the Cielo API accepts only registered and unregistered Bradesco "
+"and Banco do Brasil boletos, with the provider being the differentiator "
+"between them."
+
+#: includes/class-wc-cielo-boleto-gateway.php:168
+msgid "SIMULADO"
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:169
+msgid "Bradesco"
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:170
+msgid "Bradesco2"
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:171
+msgid "BancoDoBrasil"
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:172
+msgid "BancoDoBrasil2"
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:181
+msgid "Notificações de pagamentos"
+msgstr "Payment notifications"
+
+#: includes/class-wc-cielo-boleto-gateway.php:183
+msgid ""
+"Para sincronização de status entre o Woocommerce e Cielo é necessário "
+"configurar uma URL de notificação junto a Cielo. Opcionalmente é possivel "
+"cadastrar informações para validar o header da notificação para isso "
+"personalize os campos <code>key</code> e <code>value</code>. Após basta "
+"entrar em contato com o suporte Cielo e informar os itens abaixo aplicáveis."
+msgstr ""
+"For status synchronization between Woocommerce and Cielo it is necessary to "
+"set up a notification URL with Cielo. Optionally it is possible to register "
+"information to validate the header of the notification for this to "
+"personalize the <code> key </code> and <code> value </code> fields. After "
+"just contact Cielo support and inform the applicable items below."
+
+#: includes/class-wc-cielo-boleto-gateway.php:183
+msgid "Notificação URL:"
+msgstr "Notification URL:"
+
+#: includes/class-wc-cielo-boleto-gateway.php:194
+msgid "Configurações da Integração"
+msgstr "Integration Settings"
+
+#: includes/class-wc-cielo-boleto-gateway.php:196
+msgid ""
+"Entre com as suas credenciais de API para processar pagamentos pela Cielo. "
+"Entre em contato com o suporte Cielo para obter as credenciais de acesso."
+msgstr ""
+"Enter your API credentials to process payments by Cielo. Please contact "
+"Cielo support for access credentials."
+
+#: includes/class-wc-cielo-boleto-gateway.php:199
+msgid "Sandbox"
+msgstr ""
+
+#: includes/class-wc-cielo-boleto-gateway.php:201
+msgid "Ativar o ambiente de testes da Cielo API"
+msgstr "Enable the Cielo API testing environment"
+
+#: includes/class-wc-cielo-boleto-gateway.php:221
+#: includes/class-wc-cielo-boleto-gateway.php:223
+msgid "Habilitar Log"
+msgstr "Enable Log"
+
+#: includes/class-wc-cielo-boleto-gateway.php:225
+#, php-format
+msgid ""
+"Registra os eventos do plugin através do arquivo <code>%s</code>. Observação:"
+" isto pode gravar informações pessoais. Nós recomendamos usar isso para "
+"apenas para fins de depuração e que delete esses registros após finalizar."
+msgstr ""
+"Registers the events of the plugin through the <code>%s</ code> file. Note: "
+"This can record personal information. We recommend using this for debugging "
+"purposes only and to delete those records after they are finished."
+
+#: includes/class-wc-cielo-boleto-gateway.php:249
+#, php-format
+msgid "Log do processo de pagamento para o ID do pedido: %s"
+msgstr "Payment process log for order ID: %s"
+
+#: includes/class-wc-cielo-boleto-gateway.php:282
+#, php-format
+msgid "URL de pagamento recuperado: %s"
+msgstr "Recovery paid URL: %s"
+
+#: includes/class-wc-cielo-boleto-gateway.php:395
+msgid ""
+"O comprador iniciou a transação, mas até agora a Cielo não recebeu nenhuma "
+"informação de pagamento."
+msgstr ""
+"The buyer started the transaction, but so far Cielo has not received any "
+"payment information."
+
+#: includes/class-wc-cielo-boleto-gateway.php:428
+msgid "Erro em obter a URL de pagamento. Tente novamente!"
+msgstr "Error getting the payment URL. Try again!"
+
+#: includes/class-wc-cielo-boleto-gateway.php:437
+#, php-format
+msgid "Erro de validação do URL do gateway: %s"
+msgstr "Gateway URL validation error: %s"
+
+#: includes/class-wc-cielo-boleto-gateway.php:463
+msgid ""
+"Parece que a Cielo está fora do ar. Escolha outra forma de pagamento ou "
+"tente novamente!"
+msgstr ""
+"Looks like Cielo is off the air. Choose another form of payment or try again!"
+
+#: includes/class-wc-cielo-boleto-gateway.php:603
+#, php-format
+msgid "Cielo Boleto recebeu uma notificação de URL: %s"
+msgstr "Cielo Boleto received a notification of URL: %s"
+
+#: includes/class-wc-cielo-boleto-gateway.php:659
+msgid ""
+"Cielo Boleto: Uma atualização de status foi recebida. O status da ordem na "
+"Cielo está como: "
+msgstr ""
+"Cielo Boleto: A status update has been received. The status of the order in "
+"Heaven is as:"
+
+#: includes/class-wc-cielo-boleto-gateway.php:701
+#, php-format
+msgid ""
+"Cielo Boleto recebeu uma notificação de URL, mas o corpo da mensagem é "
+"invalido : %s"
+msgstr ""
+"Cielo Boleto received a URL notification, but the body of the message is "
+"invalid:  %s"
+
+#: includes/class-wc-cielo-boleto-gateway.php:725
+#, php-format
+msgid "Obtendo o status da ordem: %s"
+msgstr "Getting order status: %s"
+
+#: includes/class-wc-cielo-boleto-gateway.php:837
+msgid "Cielo Boleto: Pagamento cancelado."
+msgstr "Cielo Boleto: Payment canceled."
+
+#: includes/class-wc-cielo-boleto-gateway.php:847
+msgid "Cielo Boleto: Pagamento sob análise."
+msgstr "Cielo Boleto: Payment under review."
+
+#: includes/class-wc-cielo-boleto-gateway.php:860
+msgid "Cielo Boleto: Pagamento aprovado."
+msgstr "Cielo Boleto: Payment approved."
+
+#: includes/class-wc-cielo-boleto-gateway.php:880
+#, php-format
+msgid "Alteração de status da ordem: %s"
+msgstr "Changing order status: %s"
+
+#: includes/class-wc-cielo-boleto-gateway.php:908
+msgid "Por favor, pague o boleto para que sua compra seja aprovada."
+msgstr "Please pay the Boleto for your purchase to be approved."
+
+#: includes/class-wc-cielo-boleto-gateway.php:933
+#, php-format
+msgid ""
+"<strong>OBS: Para reimprimir o boleto <a href=\"%s\">clique aqui</a></strong>"
+msgstr ""
+"<strong>OBS: To reprint the Boleto <a href=\"%s\">click here</a></ strong>"
+
+#: includes/class-wc-cielo-boleto-helper.php:59
+msgid "Configurações"
+msgstr "Settings"
+
+#: includes/class-wc-cielo-boleto-helper.php:67
+msgid "Suporte"
+msgstr "Support"
+
+#: includes/class-wc-cielo-boleto-helper.php:75
+msgid "Documentação"
+msgstr "Documentation"
+
+#: includes/class-wc-cielo-boleto-notices_builder.php:80
+msgid ""
+"Para o plugin <strong>Cielo Boleto</strong> funcionar você precisa da versão "
+"5.6.0 ou superior do <strong>PHP</strong>. Entre em contato com seu host."
+msgstr ""
+"For the <strong> Cielo Boleto </strong> plugin to work you need version 5.6."
+"0 or higher of <strong> PHP </strong>. Contact your web host."
+
+#: includes/class-wc-cielo-boleto-notices_builder.php:100
+msgid ""
+"Para o plugin <strong>Cielo Boleto</strong> funcionar você precisa da versão "
+"3.0.0 ou superior do <strong>WooCommerce</strong>."
+msgstr ""
+"For the <strong>Cielo Boleto</strong> plugin to work you need version 3.0.0 "
+"or higher of <strong> WooCommerce </strong>."
+
+#: includes/class-wc-cielo-boleto-notices_builder.php:120
+msgid ""
+"Para o plugin <strong>Cielo Boleto</strong> funcionar você precisa dos "
+"plugin(s) <a href=\"plugin-install.php?tab=plugin-"
+"information&plugin=woocommerce\" data-fancybox data-type=\"iframe\">"
+"WooCommerce</a> e <a href=\"plugin-install.php?tab=plugin-"
+"information&plugin=woocommerce-extra-checkout-fields-for-brazil\" data-"
+"fancybox data-type=\"iframe\"> WooCommerce Extra Checkout Fields for "
+"Brazil</a> ativados."
+msgstr ""
+"For the <strong> Cielo Ticket </strong> plugin you need the plugins <a "
+"href=\"plugin-install.php?tab=plugin-information&plugin=woocommerce\" data-"
+"fancybox data-type=\"iframe\"> WooCommerce </a> and <a href=\"plugin-install."
+"php?tab=plugin-information&plugin=woocommerce-extra-checkout-fields-for-"
+"brazil\" data-fancybox data-type=\"iframe\"> WooCommerce Extra Checkout "
+"Fields for Brazil </a> enabled."
+
+#: includes/class-wc-cielo-boleto-notices_builder.php:140
+msgid ""
+"Para receber pagamentos com a <strong>Cielo</strong> você precisa habilitar "
+"a Moeda <a href=\"admin.php?page=wc-settings&tab=general#pricing_options-"
+"description\">Real brasileiro (R$) no WooCommerce.</a>"
+msgstr ""
+"To receive payments with <strong> Cielo </strong> you need to enable "
+"Currency <a href=\"admin.php?page=wc-settings&tab=general#pricing_options-"
+"description\"> Real Brazilian (R$) on WooCommerce. </a>"
+
+#: includes/class-wc-cielo-boleto-notices_builder.php:160
+msgid ""
+"Para receber pagamentos com a <strong>Cielo</strong> certifiquese de inserir "
+"as credenciais de acesso no menu de <a href=\"admin.php?page=wc-"
+"settings&tab=checkout&section=woo-cielo-boleto\">opções.</a>"
+msgstr ""
+"To receive payments with <strong>Cielo</strong> make sure you enter the "
+"access credentials in the <a href=\"admin.php?page=wc-"
+"settings&tab=checkout&section=woo-cielo-boleto\"> options </a>"
+
+#: includes/class-wc-cielo-boleto-notices_builder.php:180
+msgid ""
+"Obrigado por baixar o plugin <strong>Cielo Boleto</strong> para ativá-lo "
+"acesse o menu de <a href=\"admin.php?page=wc-"
+"settings&tab=checkout&section=woo-cielo-boleto\">opções</a>."
+msgstr ""
+"Thanks for downloading the <strong>Cielo Boleto</strong> plugin to activate "
+"it, go to the <a href=\"admin.php?page=wc-settings&tab=checkout&section=woo-"
+"cielo-boleto\">options </a>."
+
+#: includes/class-wc-cielo-boleto-notices_builder.php:200
+msgid ""
+"Para uma integração correta entre o plugin  <strong>Cielo Boleto</strong> e "
+"a API Cielo eCommerce, um certicado SSL precisa estar ativo em seu website."
+msgstr ""
+"For a correct integration between the <strong> Cielo Boleto </strong> plugin "
+"and Cielo eCommerce API, a SSL certificate needs to be active on your "
+"website."
+
+#. Name of the plugin
+msgid "Woocommerce Cielo Boleto"
+msgstr ""
+
+#. Description of the plugin
+msgid "Emita boletos usando a API Cielo integrada ao Woocommerce"
+msgstr "Issue Boletos using the Cielo API built into Woocommerce"
+
+#. URI of the plugin
+msgid "https://github.com/santanamic/woo-cielo-boleto"
+msgstr ""
+
+#. Author of the plugin
+msgid "WILLIAN SANTANA"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/santanamic"
+msgstr ""
