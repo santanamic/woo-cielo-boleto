@@ -1,8 +1,9 @@
-=== WooCommerce Picpay Pagamentos ===
+﻿=== WooCommerce Cielo Boleto ===
 Contributors: williansantana
-Tags: Boleto, Cielo, API v3, pagamentos, Checkout, Gateway
-Requires at least: 1.0.0
+Tags: Boleto, Cielo, API v3, Pagamentos, Checkout, Gateway
+Requires at Least: 4.6
 Tested up to: 5.1.1
+Stable tag: 1.0.0
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +13,7 @@ Emita boletos usando a API Cielo eCommerce v3 no WooCommerce
 == Description ==
 
 = Em Português Brasil =
-O plugin WooCommerce Cielo Boleto permite que logistas aceitem pagamentos via boleto usando a API Cielo. Ao finlizar uma compra os usuários são redirecionados para a URL do boleto.
+O plugin WooCommerce Cielo Boleto permite que lojistas aceitem pagamentos via boleto usando a API Cielo. Ao finlizar uma compra os usuários são redirecionados para a URL do boleto.
 
 = in English =
 The WooCommerce Cielo Boleto plugin allows merchants to Accept Boleto payments using the Cielo API. When customers complete a purchase, they are redirected to the Boleto URL.
@@ -46,7 +47,7 @@ O método de instalação manual envolve o download do nosso plugin e o seu uplo
 Atualmente a Cielo recebe pagamento somente e exclusivamente do Brasil.
 
 = Onde posso encontrar documentação? =
-Para obter ajuda na configuração, consulte nosso [guia do usuário] (https://santanamic.github.io/woo-cielo-boleto/)
+Para obter ajuda na configuração, consulte nosso [guia do usuário](https://santanamic.github.io/woo-cielo-boleto/)
 
 = Onde posso obter suporte ou conversar com outros usuários? =
 Se você tiver problemas, pode pedir ajuda no fórum de plugins.
