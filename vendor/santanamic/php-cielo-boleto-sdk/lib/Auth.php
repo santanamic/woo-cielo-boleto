@@ -1,5 +1,7 @@
 <?php
 
+namespace CieloBoleto_478R4FRF;
+
 /**
  * CreateBoleto Class
  *
@@ -20,7 +22,7 @@
  * @link    https://github.com/santanamic/php-cielo-boleto-sdk.git
  */
 
-namespace CieloBoleto_478R4FRF;
+defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 
 /**
  * Authentication type

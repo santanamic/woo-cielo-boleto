@@ -1,5 +1,7 @@
 <?php
 
+namespace CieloBoleto_478R4FRF\SDK;
+
 /**
  * Base SDK Abstract Class
  *
@@ -20,7 +22,7 @@
  * @link    https://github.com/santanamic/php-cielo-boleto-sdk.git
  */
 
-namespace CieloBoleto_478R4FRF\SDK;
+defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 
 use CieloBoleto_478R4FRF\Environment;
 
