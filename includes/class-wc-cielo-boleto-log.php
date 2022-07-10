@@ -23,8 +23,8 @@ namespace CieloBoleto_478R4FRF;
  *
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
- 
+defined('ABSPATH') || exit; // Exit if accessed directly
+
 /**
  *
  * WC_Log Class
@@ -33,10 +33,10 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  * @version  1.0.0
  * @package  woo-cielo-boleto
  *
-*/
+ */
 
 class WC_Log
-{	
+{
 
     /**
      *
@@ -44,10 +44,10 @@ class WC_Log
      *
      * @var \WC_Payment_Gateway 
      *
-     */ 	
-	
-	private $gateway;
-	
+     */
+
+    private $gateway;
+
     /**
      *
      * Receives and set gateway
@@ -56,16 +56,17 @@ class WC_Log
      * @param \WC_Payment_Gateway Woocommerce class
      * @return void
      *
-     */ 	
-	
-    public function __construct( \WC_Payment_Gateway $gateway ) {
-        
+     */
+
+    public function __construct(\WC_Payment_Gateway $gateway)
+    {
+
         /**
          *
          * Set gateway instance
          *
-         */ 
-        
+         */
+
         $this->gateway = $gateway;
     }
 
@@ -77,33 +78,34 @@ class WC_Log
      * @param Mixed Log message
      * @return void
      *
-     */ 
-	
-    public function add( $data ) {
-        
+     */
+
+    public function add($data)
+    {
+
         /**
          *
          * Declare gateway
          *
          */
-		
-		$gateway = $this->gateway;
-        
-		/**
+
+        $gateway = $this->gateway;
+
+        /**
          *
          * Check if log option has been enabled
          *
-         */ 
-        
-        if( $gateway->debug === 'yes' ) {
+         */
+
+        if ($gateway->debug === 'yes') {
 
             /**
              *
              * Set log
              *
-             */ 
-			 
-			 wc_get_logger()->add( $gateway->id, $data );		
+             */
+
+            wc_get_logger()->add($gateway->id, $data);
         }
     }
 }

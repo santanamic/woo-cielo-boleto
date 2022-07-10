@@ -23,8 +23,8 @@ namespace CieloBoleto_478R4FRF;
  *
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
- 
+defined('ABSPATH') || exit; // Exit if accessed directly
+
 /**
  *
  * WC_Validation_Builder Class
@@ -33,126 +33,134 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  * @version  1.0.0
  * @package  woo-cielo-boleto
  *
-*/
+ */
 
 class WC_Validation_Builder
-{	
+{
 
     /**
-	 *
+     *
      * Check PHP version
      *
      * @access public
      * @return boolean
-	 *
+     *
      */
 
-	public static function is_valid_phpversion() {
+    public static function is_valid_phpversion()
+    {
         return phpversion() >= '5.6';
     }
-	
+
     /**
-	 *
+     *
      * Check if WooCommerce is activated
      *
      * @access public
      * @return boolean
-	 *
+     *
      */
-	 
-	public static function is_woo_install() {
-		return class_exists ( 'WC_Payment_Gateway' );
-	}
-	
+
+    public static function is_woo_install()
+    {
+        return class_exists('WC_Payment_Gateway');
+    }
+
     /**
-	 *
+     *
      * Check woocommerce version
      *
      * @access public
      * @return boolean
-	 *
+     *
      */
 
-	public static function is_valid_wooversion() {
+    public static function is_valid_wooversion()
+    {
         return wc()->version >= '3.0.0';
     }
 
     /**
-	 *
+     *
      * Check if ExtraCheckoutFieldsForBrazil is activated
      *
      * @access public
      * @return boolean
-	 *
+     *
      */
-	
-	public static function is_ecffb_install() {
-		return class_exists ( 'Extra_Checkout_Fields_For_Brazil' );
-	}
-	
+
+    public static function is_ecffb_install()
+    {
+        return class_exists('Extra_Checkout_Fields_For_Brazil');
+    }
+
     /**
-	 *
+     *
      * Verify that the default currency of woocommerce matches the method parameter
      *
      * @access public
-	 * @param  string Base currency code. Ex: BRL
+     * @param  string Base currency code. Ex: BRL
      * @return boolean
-	 *
+     *
      */
 
-	public static function is_valid_currency( $currency ) {
-		return get_woocommerce_currency() === $currency;
-	}	
+    public static function is_valid_currency($currency)
+    {
+        return get_woocommerce_currency() === $currency;
+    }
 
     /**
-	 *
+     *
      * Verify If the user populates as access credentials
      *
      * @access public
      * @return boolean
-	 *
+     *
      */
 
-	public static function is_empty_credentials() {
-		$sandbox_status = WC_Helper::plugin_settings( 'testmode' );
-		if( $sandbox_status === 'no' ) {
-			return WC_Helper::plugin_settings( 'merchant_id' ) == '' ||  WC_Helper::plugin_settings('merchant_key') == '';
-		}		
-		if( $sandbox_status === 'yes' ) {
-			return WC_Helper::plugin_settings( 'sandbox_merchant_id' ) == '' ||  WC_Helper::plugin_settings('sandbox_merchant_key') == '';
-		}
-    } 
+    public static function is_empty_credentials()
+    {
+        $sandbox_status = WC_Helper::plugin_settings('testmode');
+        if ($sandbox_status === 'no') {
+            return WC_Helper::plugin_settings('merchant_id') == '' ||  WC_Helper::plugin_settings('merchant_key') == '';
+        }
+        if ($sandbox_status === 'yes') {
+            return WC_Helper::plugin_settings('sandbox_merchant_id') == '' ||  WC_Helper::plugin_settings('sandbox_merchant_key') == '';
+        }
+    }
 
     /**
-	 *
+     *
      * Check is active gateway
      *
      * @access public
      * @return boolean
-	 *
+     *
      */
 
-	public static function is_active_gateway() {
-        return WC_Helper::plugin_settings( 'enabled') === 'yes';
-    } 
-	
+    public static function is_active_gateway()
+    {
+        return WC_Helper::plugin_settings('enabled') === 'yes';
+    }
+
     /**
-	 *
+     *
      * Checks if an SSL certificate exists
      *
      * @access public
      * @return boolean
-	 *
+     *
      */
 
-	public static function is_ssl_exists() {	
+    public static function is_ssl_exists()
+    {
 
         /**
          *
          * Ser message if SSL not is being used.
          *
-         */ 
+         */
 
-		return is_ssl();
+        return is_ssl();
     }
 }

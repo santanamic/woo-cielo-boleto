@@ -23,7 +23,7 @@ namespace CieloBoleto_478R4FRF;
  *
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly 
+defined('ABSPATH') || exit; // Exit if accessed directly 
 
 /**
  *
@@ -33,9 +33,9 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  * @version  1.0.0
  * @package  woo-cielo-boleto
  *
-*/
+ */
 
-class WC_Loader extends WC_Environment 
+class WC_Loader extends WC_Environment
 {
 
 	/**
@@ -45,23 +45,24 @@ class WC_Loader extends WC_Environment
 	 * @access public
 	 * @return void
 	 *
-	 */    
+	 */
 
-    public static function init() {
+	public static function init()
+	{
 
 		/**
 		 *
 		 * If there are no errors
 		 *
-		 */ 
+		 */
 
-		if( WC_Validation::is_valid_environment() ) {
+		if (WC_Validation::is_valid_environment()) {
 
 			/**
 			 *
 			 * Init gateway environment
 			 *
-			 */ 
+			 */
 
 			WC_Loader::init_gateway_environment();
 
@@ -69,7 +70,7 @@ class WC_Loader extends WC_Environment
 			 *
 			 * Valid gateway settings
 			 *
-			 */ 
+			 */
 
 			WC_Validation::is_valid_gateway();
 		}

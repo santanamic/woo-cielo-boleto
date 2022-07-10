@@ -23,8 +23,8 @@ namespace CieloBoleto_478R4FRF;
  *
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
- 
+defined('ABSPATH') || exit; // Exit if accessed directly
+
 /**
  *
  * WC_Environment Class
@@ -33,46 +33,46 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  * @version  1.0.0
  * @package  woo-cielo-boleto
  *
-*/
+ */
 
 class WC_Environment
-{	
+{
 
     /**
-	 *
+     *
      * Registering dependencies
      * Performs initial settings and registers gateway
-	 * 
+     * 
      * @access protected
      * @return void
-	 *
-     */ 
-	
-    protected static function init_gateway_environment() {
+     *
+     */
+
+    protected static function init_gateway_environment()
+    {
 
         /**
          *
          * Insert Shortcut to Gateway Settings
          *
-         */ 
-        
-        add_filter('plugin_action_links_' . plugin_basename( WOOCOMMERCE_CIELO_BOLETO_BASENAME ), array('\CieloBoleto_478R4FRF\WC_Helper', 'admin_plugin_links'));
-		
+         */
+
+        add_filter('plugin_action_links_' . plugin_basename(WOOCOMMERCE_CIELO_BOLETO_BASENAME), array('\CieloBoleto_478R4FRF\WC_Helper', 'admin_plugin_links'));
+
         /**
          *
          * Set meta value in woocommerce filter
          *
-         */ 
-		 
-		add_filter( 'woocommerce_order_data_store_cpt_get_orders_query', array('\CieloBoleto_478R4FRF\WC_Helper', 'handle_query_var'), 10, 2 );
+         */
+
+        add_filter('woocommerce_order_data_store_cpt_get_orders_query', array('\CieloBoleto_478R4FRF\WC_Helper', 'handle_query_var'), 10, 2);
 
         /**
          *
          * Registering gateway(s)
          *
-         */ 
+         */
 
-        add_filter( 'woocommerce_payment_gateways', array('\CieloBoleto_478R4FRF\WC_Gateway_Register', 'add_gateway') );
-
-    }   
+        add_filter('woocommerce_payment_gateways', array('\CieloBoleto_478R4FRF\WC_Gateway_Register', 'add_gateway'));
+    }
 }

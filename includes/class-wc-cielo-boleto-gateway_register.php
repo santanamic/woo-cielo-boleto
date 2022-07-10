@@ -23,8 +23,8 @@ namespace CieloBoleto_478R4FRF;
  *
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
- 
+defined('ABSPATH') || exit; // Exit if accessed directly
+
 /**
  *
  * WC_Gateway_Register Class
@@ -33,37 +33,38 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  * @version  1.0.0
  * @package  woo-cielo-boleto
  *
-*/
+ */
 
-class WC_Gateway_Register 
-{ 
+class WC_Gateway_Register
+{
 
-	/**
-	 *
-	 * Gateway Registration on woocommerce
-	 * 
-	 * @access private
-	 * @param  array Woocommerce all registered gateway
-	 * @return array all gateway list
-	 *
-	 */ 
-	
-    public static function add_gateway($data) {
-		
+     /**
+      *
+      * Gateway Registration on woocommerce
+      * 
+      * @access private
+      * @param  array Woocommerce all registered gateway
+      * @return array all gateway list
+      *
+      */
+
+     public static function add_gateway($data)
+     {
+
           /**
            *
            * Set plugin gateway class
            *
-           */ 
-          
+           */
+
           $data[] = '\CieloBoleto_478R4FRF\WC_Gateway';
 
           /**
            *
            * all gateway
            *
-           */ 
-          
+           */
+
           return $data;
      }
 }

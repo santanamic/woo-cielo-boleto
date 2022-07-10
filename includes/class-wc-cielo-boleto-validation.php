@@ -23,8 +23,8 @@ namespace CieloBoleto_478R4FRF;
  *
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
- 
+defined('ABSPATH') || exit; // Exit if accessed directly
+
 /**
  *
  * WC_Validation Class
@@ -33,120 +33,122 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  * @version  1.0.0
  * @package  woo-cielo-boleto
  *
-*/
+ */
 
 class WC_Validation extends WC_Validation_Builder
-{	
+{
 
-    /**
+	/**
 	 *
-     * Check is valid environment
-     *
-     * @access public
-     * @return boolean
+	 * Check is valid environment
 	 *
-     */
+	 * @access public
+	 * @return boolean
+	 *
+	 */
 
-	public static function is_valid_environment() {
-		
-        /**
+	public static function is_valid_environment()
+	{
+
+		/**
 		 *
 		 * Closes if the PHP version is not compatible
 		 *
 		 */
-        
-		if ( ! WC_Validation::is_valid_phpversion() )
+
+		if (!WC_Validation::is_valid_phpversion())
 			return WC_Notices::php_version();
-		
-        /**
+
+		/**
 		 *
 		 * Closes if Woocommerce is not enabled
 		 *
-		 */ 
-        
-		if ( ! WC_Validation::is_woo_install() )
+		 */
+
+		if (!WC_Validation::is_woo_install())
 			return WC_Notices::plugins_missing();
-		
-        /**
+
+		/**
 		 *
 		 * Closes if the Woocommerce version is not compatible
 		 *
-		 */ 
-        
-		if ( ! WC_Validation::is_valid_wooversion() )
+		 */
+
+		if (!WC_Validation::is_valid_wooversion())
 			return WC_Notices::plugins_version();
-			
+
 		/**
 		 *
 		 * Closes if ExtraCheckoutFieldsBrazil is not enabled
-         * 			 *
-		 */ 
-			
-		if ( ! WC_Validation::is_ecffb_install() )
+		 * 			 *
+		 */
+
+		if (!WC_Validation::is_ecffb_install())
 			return WC_Notices::plugins_missing();
-			
+
 		/**
 		 *
 		 * Closes if Woocommerce currency is not supported
 		 *
-		 */ 
+		 */
 
-		if ( ! WC_Validation::is_valid_currency( 'BRL' ) ) 
-            return WC_Notices::currency_error();
+		if (!WC_Validation::is_valid_currency('BRL'))
+			return WC_Notices::currency_error();
 
 		/**
 		 *
 		 * Detect SSL
 		 *
-		 */ 
+		 */
 
-		if ( ! WC_Validation::is_ssl_exists() ) 
-            WC_Notices::ssl_require();
+		if (!WC_Validation::is_ssl_exists())
+			WC_Notices::ssl_require();
 
 		/**
 		 *
 		 * Return if pass validation
 		 *
-		 */ 
+		 */
 
-        return true;
-    }
+		return true;
+	}
 
-    /**
+	/**
 	 *
-     * Verify that the gateway configuration is valid
-     *
-     * @access public
-     * @return boolean
+	 * Verify that the gateway configuration is valid
 	 *
-     */
+	 * @access public
+	 * @return boolean
+	 *
+	 */
 
-	public static function is_valid_gateway() {
-        
+	public static function is_valid_gateway()
+	{
+
 		/**
 		 *
 		 * Check enabled gateway
 		 *
-		 */ 
+		 */
 
-		if ( ! WC_Validation::is_active_gateway() ) 
-           return WC_Notices::welcome_to_plugin();		
-            
-        /**
-         *
-         * Only show a message if credentials do not seem to
-         *
-         */ 
-     
-        if ( WC_Validation::is_empty_credentials() ) 
-            return WC_Notices::credentials_missing();
+		if (!WC_Validation::is_active_gateway())
+			return WC_Notices::welcome_to_plugin();
 
-        /**
+		/**
+		 *
+		 * Only show a message if credentials do not seem to
+		 *
+		 */
+
+		if (WC_Validation::is_empty_credentials())
+			return WC_Notices::credentials_missing();
+
+		/**
 		 *
 		 * Return if pass validation
 		 *
-		 */ 
+		 */
 
-        return true;
-    }
+		return true;
+	}
 }

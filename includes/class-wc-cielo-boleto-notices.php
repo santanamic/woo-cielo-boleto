@@ -23,8 +23,8 @@ namespace CieloBoleto_478R4FRF;
  *
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
- 
+defined('ABSPATH') || exit; // Exit if accessed directly
+
 /**
  *
  * WC_Notices Class
@@ -33,36 +33,37 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  * @version  1.0.0
  * @package  woo-cielo-boleto
  *
-*/
+ */
 
 class WC_Notices
-{	
-	
-	/**
-	 *
-	 * Alert admin error. The plugin can not function
-	 *
-	 * @access public
-	 * @return boolean
-	 *
-	 */ 
-	
-    public static function __callStatic( $method, $arguments ) {
+{
+
+    /**
+     *
+     * Alert admin error. The plugin can not function
+     *
+     * @access public
+     * @return boolean
+     *
+     */
+
+    public static function __callStatic($method, $arguments)
+    {
 
         /**
          *
          * Woocommerce and ExtraCheckoutFieldsForBrazil required
          *
-         */ 
-        
-        add_action( 'admin_notices', array('\CieloBoleto_478R4FRF\WC_Notices_Builder', $method) );
-        
+         */
+
+        add_action('admin_notices', array('\CieloBoleto_478R4FRF\WC_Notices_Builder', $method));
+
         /**
          *
          * Close method
          *
-         */ 
-        
+         */
+
         return false;
     }
 }
