@@ -150,5 +150,3 @@ class WC_Validation extends WC_Validation_Builder
         return true;
     }
 }
-
-?>

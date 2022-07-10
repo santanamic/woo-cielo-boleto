@@ -75,5 +75,3 @@ class WC_Loader extends WC_Environment
 		}
 	}
 }
-
-?>

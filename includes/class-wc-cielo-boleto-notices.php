@@ -66,5 +66,3 @@ class WC_Notices
         return false;
     }
 }
-
-?>

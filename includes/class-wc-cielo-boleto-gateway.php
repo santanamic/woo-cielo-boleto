@@ -943,5 +943,3 @@ class WC_Gateway extends \WC_Payment_Gateway
         return WC_Validation::is_valid_gateway();
     }	
 }
-
-?>

@@ -200,4 +200,3 @@ class WC_Notices_Builder
           return self::notice_format( __('Para uma integração correta entre o plugin  <strong>Cielo Boleto</strong> e a API Cielo eCommerce, um certicado SSL precisa estar ativo em seu website.', 'woo-cielo-boleto'), 'error');
     }
 }
-?>

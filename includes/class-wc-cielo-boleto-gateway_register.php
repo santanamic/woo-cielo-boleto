@@ -67,5 +67,3 @@ class WC_Gateway_Register
           return $data;
      }
 }
-
-?>

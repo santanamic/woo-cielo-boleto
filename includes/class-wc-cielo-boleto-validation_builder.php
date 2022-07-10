@@ -156,5 +156,3 @@ class WC_Validation_Builder
 		return is_ssl();
     }
 }
-
-?>
